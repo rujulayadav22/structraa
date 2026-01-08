@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page2</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="Structra.css">
+</head>
+
+<body>
+<div class="back-img" onclick="goBack()">
+    <img src="back-button.png" alt="Back">
+    <span>Back</span>
+</div>
+<section class="scan-wrapper">
+
+    <div class="scan-header">
+        <h2 class="scan-title">Upload Image</h2>
+        <p class="scan-subtitle">Extract readable text from an image</p>
+    </div>
+
+    <div class="scan-input">
+        <label class="upload-label">
+            Choose an image
+            <input type="file" id="imageInput" accept="image/*" hidden>
+        </label>
+    </div>
+
+    <div class="preview-box">
+        <img id="imagePreview" alt="Image preview">
+    </div>
+
+    <button class="scan-btn" onclick="extractText()">Extract Text</button>
+
+    <div class="text-result">
+        <textarea id="outputText"
+                  placeholder="Extracted text will appear here..."></textarea>
+        <span class="text-count" id="counter">0 / 5000</span>
+    </div>
+
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+
+
+<script src="Structra.js"></script>
+
+</body>
+</html>

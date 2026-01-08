@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Structra.css">
+</head>
+<body>
+    <div class="back" onclick="goBack()">
+        <div class="arrow">
+            <img src="back-button.png" alt="back">
+        </div>
+        <div class="par1">Convert Text</div>
+    </div>
+<div class="paste">
+    <div class="inst2">Paste your Text below</div>
+    <div class="clear2">Make confusing things clearer</div>
+</div>
+
+<section class="input-card">
+    <div class="char-count">0 / 5000</div>
+
+    <textarea id="inputText" maxlength="5000"
+        placeholder="Paste step-by-step instructions, rules, or guidelines here...">
+    </textarea>
+
+    <div class="btn-group">
+        <button class="btn convert-btn"onclick="convertText()">Convert</button>
+        <button class="btn clear-btn" onclick="clearText()">Clear</button>
+    </div>
+</section>
+
+<h3 class="steps-title">Simplified Steps</h3>
+
+<section class="output-card">
+    <ol id="outputList">
+        <li>...</li>
+        <li>...</li>
+        <li>...</li>
+    </ol>
+</section>
+
+
+<script src="Structra.js"></script>
+</body>
+</html>
